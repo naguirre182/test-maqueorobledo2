@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manqueo Robledo - Escribanía y Asesoría Legal</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
     <style>
         body {
             box-sizing: border-box;
         }
-        
+
         .silver-gradient {
             background: linear-gradient(135deg, #C0C0C0, #A8A8A8);
         }
-        
+
         .text-silver {
             color: #C0C0C0;
         }
-        
+
         .border-silver {
             border-color: #C0C0C0;
         }
-        
+
         .hover-silver:hover {
             background-color: #C0C0C0;
             color: #000000;
         }
-        
+
         /* Efectos plateados metalizados */
         .metallic-silver {
             background: linear-gradient(145deg, #E8E8E8, #B8B8B8, #D0D0D0, #A0A0A0);
             background-size: 300% 300%;
             animation: metallicShine 3s ease-in-out infinite;
         }
-        
+
         .metallic-border {
             border: 2px solid;
             border-image: linear-gradient(45deg, #E8E8E8, #B8B8B8, #D0D0D0, #A0A0A0) 1;
             box-shadow: 0 0 20px rgba(192, 192, 192, 0.3), inset 0 0 20px rgba(255, 255, 255, 0.1);
         }
-        
+
         .metallic-text {
             background: linear-gradient(145deg, #F0F0F0, #C0C0C0, #E0E0E0, #B0B0B0);
             -webkit-background-clip: text;
@@ -47,40 +49,47 @@
             background-clip: text;
             text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
         }
-        
+
         @keyframes metallicShine {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
         }
-        
+
         /* Cambio de hover dorado a azul elegante */
         .hover-blue:hover {
             background-color: #3B82F6;
             color: #FFFFFF;
             box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
         }
-        
+
         .text-hover-blue:hover {
             color: #60A5FA;
         }
-        
+
         .border-hover-blue:hover {
             border-color: #3B82F6;
         }
-        
+
         .elegant-shadow {
             box-shadow: 0 10px 30px rgba(192, 192, 192, 0.2);
         }
-        
+
         .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 15px 40px rgba(192, 192, 192, 0.3);
         }
-        
+
         .service-card {
             transition: all 0.3s ease;
         }
-        
+
         /* Animaciones para partículas plateadas */
         .particle {
             position: absolute;
@@ -89,7 +98,7 @@
             opacity: 0.3;
             animation: float 6s ease-in-out infinite;
         }
-        
+
         .particle-1 {
             width: 4px;
             height: 4px;
@@ -97,7 +106,7 @@
             left: 10%;
             animation-delay: 0s;
         }
-        
+
         .particle-2 {
             width: 6px;
             height: 6px;
@@ -105,7 +114,7 @@
             left: 80%;
             animation-delay: 2s;
         }
-        
+
         .particle-3 {
             width: 3px;
             height: 3px;
@@ -113,7 +122,7 @@
             left: 70%;
             animation-delay: 4s;
         }
-        
+
         .particle-4 {
             width: 5px;
             height: 5px;
@@ -121,7 +130,7 @@
             left: 20%;
             animation-delay: 1s;
         }
-        
+
         .particle-5 {
             width: 4px;
             height: 4px;
@@ -129,74 +138,51 @@
             left: 90%;
             animation-delay: 3s;
         }
-        
+
         @keyframes float {
-            0%, 100% {
+
+            0%,
+            100% {
                 transform: translateY(0px) rotate(0deg);
                 opacity: 0.3;
             }
+
             50% {
                 transform: translateY(-20px) rotate(180deg);
                 opacity: 0.6;
             }
         }
-        
+
         /* Animación de entrada */
         @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
             }
         }
-        
+
         .fade-in-up {
             animation: fadeInUp 1s ease-out forwards;
         }
     </style>
 </head>
+
 <body class="bg-black text-white font-sans">
     <!-- Header -->
-    <header class="bg-gray-900 border-b border-silver py-4 fixed top-0 left-0 right-0 z-40 backdrop-blur-sm bg-gray-900/95">
+    <header
+        class="bg-gray-900 border-b border-silver py-4 fixed top-0 left-0 right-0 z-40 backdrop-blur-sm bg-gray-900/95">
         <nav class="container mx-auto px-6">
             <div class="text-center">
                 <div class="flex items-center justify-center mb-4">
-                    <svg width="40" height="40" viewBox="0 0 200 200" class="mr-3">
-                        <!-- Escudo exterior -->
-                        <path d="M100 20 L160 60 L160 140 L100 180 L40 140 L40 60 Z" 
-                              fill="none" stroke="#C0C0C0" stroke-width="3"/>
-                        
-                        <!-- Escudo interior -->
-                        <path d="M100 35 L145 65 L145 135 L100 165 L55 135 L55 65 Z" 
-                              fill="#1a1a1a" stroke="#A8A8A8" stroke-width="2"/>
-                        
-                        <!-- Balanza de la justicia -->
-                        <g transform="translate(100,90)">
-                            <!-- Poste central -->
-                            <line x1="0" y1="-25" x2="0" y2="25" stroke="#C0C0C0" stroke-width="3"/>
-                            
-                            <!-- Barra horizontal -->
-                            <line x1="-30" y1="-15" x2="30" y2="-15" stroke="#C0C0C0" stroke-width="2"/>
-                            
-                            <!-- Platos izquierdo -->
-                            <circle cx="-25" cy="-10" r="8" fill="none" stroke="#C0C0C0" stroke-width="2"/>
-                            <line x1="-25" y1="-15" x2="-25" y2="-2" stroke="#C0C0C0" stroke-width="1"/>
-                            
-                            <!-- Platos derecho -->
-                            <circle cx="25" cy="-10" r="8" fill="none" stroke="#C0C0C0" stroke-width="2"/>
-                            <line x1="25" y1="-15" x2="25" y2="-2" stroke="#C0C0C0" stroke-width="1"/>
-                            
-                            <!-- Base -->
-                            <rect x="-15" y="20" width="30" height="8" fill="#C0C0C0"/>
-                        </g>
-                        
-                        <!-- Iniciales -->
-                        <text x="100" y="140" text-anchor="middle" fill="#C0C0C0" font-size="24" font-weight="bold" font-family="serif">MR</text>
-                    </svg>
-                    <div class="text-silver text-2xl font-bold">Manqueo Robledo</div>
+                    <div id="loading-logo" class="transform scale-150">
+                        <img src="./images/logo-header.png" alt="Logo Fallen" class="w-30 h-20 animate-pulse">
+                    </div>
+
                 </div>
                 <div class="flex justify-center space-x-8">
                     <a href="#inicio" class="text-white text-hover-blue transition-colors font-medium">Inicio</a>
@@ -211,38 +197,10 @@
     <!-- Pantalla de carga inicial -->
     <div id="loading-screen" class="fixed inset-0 bg-black z-50 flex items-center justify-center">
         <div id="loading-logo" class="transform scale-150">
-            <svg width="200" height="200" viewBox="0 0 200 200" class="animate-pulse">
-                <!-- Escudo exterior -->
-                <path d="M100 20 L160 60 L160 140 L100 180 L40 140 L40 60 Z" 
-                      fill="none" stroke="#C0C0C0" stroke-width="3"/>
-                
-                <!-- Escudo interior -->
-                <path d="M100 35 L145 65 L145 135 L100 165 L55 135 L55 65 Z" 
-                      fill="#1a1a1a" stroke="#A8A8A8" stroke-width="2"/>
-                
-                <!-- Balanza de la justicia -->
-                <g transform="translate(100,90)">
-                    <!-- Poste central -->
-                    <line x1="0" y1="-25" x2="0" y2="25" stroke="#C0C0C0" stroke-width="3"/>
-                    
-                    <!-- Barra horizontal -->
-                    <line x1="-30" y1="-15" x2="30" y2="-15" stroke="#C0C0C0" stroke-width="2"/>
-                    
-                    <!-- Platos izquierdo -->
-                    <circle cx="-25" cy="-10" r="8" fill="none" stroke="#C0C0C0" stroke-width="2"/>
-                    <line x1="-25" y1="-15" x2="-25" y2="-2" stroke="#C0C0C0" stroke-width="1"/>
-                    
-                    <!-- Platos derecho -->
-                    <circle cx="25" cy="-10" r="8" fill="none" stroke="#C0C0C0" stroke-width="2"/>
-                    <line x1="25" y1="-15" x2="25" y2="-2" stroke="#C0C0C0" stroke-width="1"/>
-                    
-                    <!-- Base -->
-                    <rect x="-15" y="20" width="30" height="8" fill="#C0C0C0"/>
-                </g>
-                
-                <!-- Iniciales -->
-                <text x="100" y="140" text-anchor="middle" fill="#C0C0C0" font-size="24" font-weight="bold" font-family="serif">MR</text>
-            </svg>
+            <div id="loading-logo" class="transform scale-150">
+                <img src="./images/logo2.png" alt="Logo Fallen" class="w-48 h-48 animate-pulse">
+            </div>
+
         </div>
     </div>
 
@@ -253,27 +211,27 @@
             <!-- Imagen de fondo elegante con SVG -->
             <svg width="100%" height="100%" viewBox="0 0 1920 1080" class="absolute inset-0 w-full h-full object-cover">
                 <!-- Fondo base -->
-                <rect width="1920" height="1080" fill="url(#heroGradient)"/>
-                
+                <rect width="1920" height="1080" fill="url(#heroGradient)" />
+
                 <!-- Elementos arquitectónicos elegantes -->
                 <g opacity="0.1">
                     <!-- Columnas clásicas -->
-                    <rect x="100" y="200" width="40" height="600" fill="#C0C0C0"/>
-                    <rect x="200" y="150" width="40" height="650" fill="#C0C0C0"/>
-                    <rect x="300" y="180" width="40" height="620" fill="#C0C0C0"/>
-                    
-                    <rect x="1480" y="200" width="40" height="600" fill="#C0C0C0"/>
-                    <rect x="1580" y="150" width="40" height="650" fill="#C0C0C0"/>
-                    <rect x="1680" y="180" width="40" height="620" fill="#C0C0C0"/>
+                    <rect x="100" y="200" width="40" height="600" fill="#C0C0C0" />
+                    <rect x="200" y="150" width="40" height="650" fill="#C0C0C0" />
+                    <rect x="300" y="180" width="40" height="620" fill="#C0C0C0" />
+
+                    <rect x="1480" y="200" width="40" height="600" fill="#C0C0C0" />
+                    <rect x="1580" y="150" width="40" height="650" fill="#C0C0C0" />
+                    <rect x="1680" y="180" width="40" height="620" fill="#C0C0C0" />
                 </g>
-                
+
                 <!-- Patrones geométricos sutiles -->
                 <g opacity="0.05">
-                    <circle cx="400" cy="300" r="150" fill="none" stroke="#C0C0C0" stroke-width="2"/>
-                    <circle cx="1520" cy="400" r="200" fill="none" stroke="#C0C0C0" stroke-width="2"/>
-                    <polygon points="800,100 900,200 800,300 700,200" fill="none" stroke="#C0C0C0" stroke-width="1"/>
+                    <circle cx="400" cy="300" r="150" fill="none" stroke="#C0C0C0" stroke-width="2" />
+                    <circle cx="1520" cy="400" r="200" fill="none" stroke="#C0C0C0" stroke-width="2" />
+                    <polygon points="800,100 900,200 800,300 700,200" fill="none" stroke="#C0C0C0" stroke-width="1" />
                 </g>
-                
+
                 <!-- Definición de gradientes -->
                 <defs>
                     <linearGradient id="heroGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -285,10 +243,10 @@
                     </linearGradient>
                 </defs>
             </svg>
-            
+
             <!-- Overlay oscuro para mejor legibilidad -->
             <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-            
+
             <!-- Efectos de partículas doradas -->
             <div class="absolute inset-0">
                 <div class="particle particle-1"></div>
@@ -298,45 +256,11 @@
                 <div class="particle particle-5"></div>
             </div>
         </div>
-        
+
         <!-- Contenido principal -->
         <div id="hero-content" class="text-center px-6 relative z-10 opacity-0">
-            <!-- Logo SVG -->
-            <div class="mb-8 flex justify-center">
-                <svg width="200" height="200" viewBox="0 0 200 200" class="elegant-shadow drop-shadow-2xl">
-                    <!-- Escudo exterior -->
-                    <path d="M100 20 L160 60 L160 140 L100 180 L40 140 L40 60 Z" 
-                          fill="none" stroke="#C0C0C0" stroke-width="3"/>
-                    
-                    <!-- Escudo interior -->
-                    <path d="M100 35 L145 65 L145 135 L100 165 L55 135 L55 65 Z" 
-                          fill="#1a1a1a" stroke="#A8A8A8" stroke-width="2"/>
-                    
-                    <!-- Balanza de la justicia -->
-                    <g transform="translate(100,90)">
-                        <!-- Poste central -->
-                        <line x1="0" y1="-25" x2="0" y2="25" stroke="#C0C0C0" stroke-width="3"/>
-                        
-                        <!-- Barra horizontal -->
-                        <line x1="-30" y1="-15" x2="30" y2="-15" stroke="#C0C0C0" stroke-width="2"/>
-                        
-                        <!-- Platos izquierdo -->
-                        <circle cx="-25" cy="-10" r="8" fill="none" stroke="#C0C0C0" stroke-width="2"/>
-                        <line x1="-25" y1="-15" x2="-25" y2="-2" stroke="#C0C0C0" stroke-width="1"/>
-                        
-                        <!-- Platos derecho -->
-                        <circle cx="25" cy="-10" r="8" fill="none" stroke="#C0C0C0" stroke-width="2"/>
-                        <line x1="25" y1="-15" x2="25" y2="-2" stroke="#C0C0C0" stroke-width="1"/>
-                        
-                        <!-- Base -->
-                        <rect x="-15" y="20" width="30" height="8" fill="#C0C0C0"/>
-                    </g>
-                    
-                    <!-- Iniciales -->
-                    <text x="100" y="140" text-anchor="middle" fill="#C0C0C0" font-size="24" font-weight="bold" font-family="serif">MR</text>
-                </svg>
-            </div>
             
+
             <h1 class="text-5xl md:text-7xl font-bold mb-6 metallic-text drop-shadow-lg">
                 Manqueo Robledo
             </h1>
@@ -344,10 +268,11 @@
                 Escribanía & Asesoría Legal
             </p>
             <p class="text-lg md:text-xl mb-8 text-gray-300 max-w-2xl mx-auto drop-shadow-sm">
-                Brindamos servicios notariales y asesoría jurídica con más de 20 años de experiencia, 
+                Brindamos servicios notariales y asesoría jurídica con más de 20 años de experiencia,
                 garantizando profesionalismo y confianza en cada gestión.
             </p>
-            <button class="bg-transparent border-2 border-silver text-silver px-8 py-3 text-lg font-semibold hover-blue transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 metallic-border">
+            <button
+                class="bg-transparent border-2 border-silver text-silver px-8 py-3 text-lg font-semibold hover-blue transition-all duration-300 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 metallic-border">
                 Consultar Ahora
             </button>
         </div>
@@ -357,10 +282,13 @@
     <section id="servicios" class="py-20 bg-gray-900 relative overflow-hidden">
         <!-- Elementos decorativos de fondo -->
         <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-10 right-20 w-40 h-40 border-2 border-silver rounded-full metallic-border animate-pulse"></div>
-            <div class="absolute bottom-10 left-20 w-32 h-32 border-2 border-silver transform rotate-45 metallic-border animate-spin" style="animation-duration: 20s;"></div>
+            <div
+                class="absolute top-10 right-20 w-40 h-40 border-2 border-silver rounded-full metallic-border animate-pulse">
+            </div>
+            <div class="absolute bottom-10 left-20 w-32 h-32 border-2 border-silver transform rotate-45 metallic-border animate-spin"
+                style="animation-duration: 20s;"></div>
         </div>
-        
+
         <div class="container mx-auto px-6 relative z-10">
             <!-- Título principal -->
             <div class="text-center mb-16">
@@ -372,16 +300,19 @@
                     Soluciones jurídicas integrales con la máxima profesionalidad
                 </p>
             </div>
-            
+
             <!-- Grid de servicios principales -->
             <div class="grid lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                 <!-- Certificaciones y Legalizaciones -->
-                <div class="service-card bg-gradient-to-br from-gray-800 to-black p-8 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
+                <div
+                    class="service-card bg-gradient-to-br from-gray-800 to-black p-8 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
                     <div class="text-center mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                             <span class="text-white text-3xl">🖊️</span>
                         </div>
-                        <h3 class="text-xl font-bold metallic-text group-hover:text-blue-300 transition-colors">Certificaciones y Legalizaciones</h3>
+                        <h3 class="text-xl font-bold metallic-text group-hover:text-blue-300 transition-colors">
+                            Certificaciones y Legalizaciones</h3>
                     </div>
                     <div class="flex-grow">
                         <ul class="text-gray-300 space-y-3 text-sm">
@@ -404,7 +335,8 @@
                         </ul>
                     </div>
                     <div class="mt-6 pt-4 border-t border-gray-700">
-                        <button class="text-silver hover:text-blue-400 text-sm font-semibold transition-colors flex items-center mx-auto group-hover:underline">
+                        <button
+                            class="text-silver hover:text-blue-400 text-sm font-semibold transition-colors flex items-center mx-auto group-hover:underline">
                             Ver más detalles
                             <span class="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
                         </button>
@@ -412,12 +344,15 @@
                 </div>
 
                 <!-- Documentación Notarial -->
-                <div class="service-card bg-gradient-to-br from-gray-800 to-black p-8 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
+                <div
+                    class="service-card bg-gradient-to-br from-gray-800 to-black p-8 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
                     <div class="text-center mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                             <span class="text-white text-3xl">📜</span>
                         </div>
-                        <h3 class="text-xl font-bold metallic-text group-hover:text-blue-300 transition-colors">Documentación Notarial</h3>
+                        <h3 class="text-xl font-bold metallic-text group-hover:text-blue-300 transition-colors">
+                            Documentación Notarial</h3>
                     </div>
                     <div class="flex-grow">
                         <ul class="text-gray-300 space-y-3 text-sm">
@@ -444,7 +379,8 @@
                         </ul>
                     </div>
                     <div class="mt-6 pt-4 border-t border-gray-700">
-                        <button class="text-silver hover:text-blue-400 text-sm font-semibold transition-colors flex items-center mx-auto group-hover:underline">
+                        <button
+                            class="text-silver hover:text-blue-400 text-sm font-semibold transition-colors flex items-center mx-auto group-hover:underline">
                             Ver más detalles
                             <span class="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
                         </button>
@@ -452,12 +388,15 @@
                 </div>
 
                 <!-- Protección Patrimonial -->
-                <div class="service-card bg-gradient-to-br from-gray-800 to-black p-8 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
+                <div
+                    class="service-card bg-gradient-to-br from-gray-800 to-black p-8 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
                     <div class="text-center mb-6">
-                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
                             <span class="text-white text-3xl">🛡️</span>
                         </div>
-                        <h3 class="text-xl font-bold metallic-text group-hover:text-blue-300 transition-colors">Protección Patrimonial</h3>
+                        <h3 class="text-xl font-bold metallic-text group-hover:text-blue-300 transition-colors">
+                            Protección Patrimonial</h3>
                     </div>
                     <div class="flex-grow">
                         <ul class="text-gray-300 space-y-3 text-sm">
@@ -484,7 +423,8 @@
                         </ul>
                     </div>
                     <div class="mt-6 pt-4 border-t border-gray-700">
-                        <button class="text-silver hover:text-blue-400 text-sm font-semibold transition-colors flex items-center mx-auto group-hover:underline">
+                        <button
+                            class="text-silver hover:text-blue-400 text-sm font-semibold transition-colors flex items-center mx-auto group-hover:underline">
                             Ver más detalles
                             <span class="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
                         </button>
@@ -495,12 +435,15 @@
             <!-- Servicios adicionales en segunda fila -->
             <div class="grid md:grid-cols-4 gap-6 max-w-7xl mx-auto mt-12">
                 <!-- Sociedades y Empresas -->
-                <div class="service-card bg-gradient-to-br from-gray-800 to-black p-6 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
+                <div
+                    class="service-card bg-gradient-to-br from-gray-800 to-black p-6 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
                     <div class="text-center mb-4">
-                        <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
                             <span class="text-white text-2xl">🏢</span>
                         </div>
-                        <h3 class="text-lg font-bold metallic-text group-hover:text-blue-300 transition-colors">Sociedades</h3>
+                        <h3 class="text-lg font-bold metallic-text group-hover:text-blue-300 transition-colors">
+                            Sociedades</h3>
                     </div>
                     <div class="flex-grow">
                         <ul class="text-gray-300 space-y-2 text-sm">
@@ -515,7 +458,8 @@
                         </ul>
                     </div>
                     <div class="mt-4 pt-3 border-t border-gray-700">
-                        <button class="text-silver hover:text-blue-400 text-xs font-semibold transition-colors flex items-center mx-auto group-hover:underline">
+                        <button
+                            class="text-silver hover:text-blue-400 text-xs font-semibold transition-colors flex items-center mx-auto group-hover:underline">
                             Ver más detalles
                             <span class="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
                         </button>
@@ -523,12 +467,15 @@
                 </div>
 
                 <!-- Trámites de Herencia -->
-                <div class="service-card bg-gradient-to-br from-gray-800 to-black p-6 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
+                <div
+                    class="service-card bg-gradient-to-br from-gray-800 to-black p-6 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
                     <div class="text-center mb-4">
-                        <div class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
                             <span class="text-white text-2xl">🧭</span>
                         </div>
-                        <h3 class="text-lg font-bold metallic-text group-hover:text-blue-300 transition-colors">Herencias</h3>
+                        <h3 class="text-lg font-bold metallic-text group-hover:text-blue-300 transition-colors">
+                            Herencias</h3>
                     </div>
                     <div class="flex-grow">
                         <ul class="text-gray-300 space-y-2 text-sm">
@@ -543,7 +490,8 @@
                         </ul>
                     </div>
                     <div class="mt-4 pt-3 border-t border-gray-700">
-                        <button class="text-silver hover:text-blue-400 text-xs font-semibold transition-colors flex items-center mx-auto group-hover:underline">
+                        <button
+                            class="text-silver hover:text-blue-400 text-xs font-semibold transition-colors flex items-center mx-auto group-hover:underline">
                             Ver más detalles
                             <span class="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
                         </button>
@@ -551,12 +499,15 @@
                 </div>
 
                 <!-- Autorizaciones Especiales -->
-                <div class="service-card bg-gradient-to-br from-gray-800 to-black p-6 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
+                <div
+                    class="service-card bg-gradient-to-br from-gray-800 to-black p-6 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
                     <div class="text-center mb-4">
-                        <div class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-teal-500 to-teal-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
                             <span class="text-white text-2xl">✈️</span>
                         </div>
-                        <h3 class="text-lg font-bold metallic-text group-hover:text-blue-300 transition-colors">Autorizaciones</h3>
+                        <h3 class="text-lg font-bold metallic-text group-hover:text-blue-300 transition-colors">
+                            Autorizaciones</h3>
                     </div>
                     <div class="flex-grow">
                         <ul class="text-gray-300 space-y-2 text-sm">
@@ -571,7 +522,8 @@
                         </ul>
                     </div>
                     <div class="mt-4 pt-3 border-t border-gray-700">
-                        <button class="text-silver hover:text-blue-400 text-xs font-semibold transition-colors flex items-center mx-auto group-hover:underline">
+                        <button
+                            class="text-silver hover:text-blue-400 text-xs font-semibold transition-colors flex items-center mx-auto group-hover:underline">
                             Ver más detalles
                             <span class="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
                         </button>
@@ -579,12 +531,15 @@
                 </div>
 
                 <!-- Otros Actos Jurídicos -->
-                <div class="service-card bg-gradient-to-br from-gray-800 to-black p-6 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
+                <div
+                    class="service-card bg-gradient-to-br from-gray-800 to-black p-6 rounded-2xl border border-gray-700 border-hover-blue transition-all duration-300 group h-full flex flex-col">
                     <div class="text-center mb-4">
-                        <div class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
+                        <div
+                            class="w-16 h-16 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center mx-auto mb-3 group-hover:scale-110 transition-transform duration-300">
                             <span class="text-white text-2xl">🔄</span>
                         </div>
-                        <h3 class="text-lg font-bold metallic-text group-hover:text-blue-300 transition-colors">Otros Actos</h3>
+                        <h3 class="text-lg font-bold metallic-text group-hover:text-blue-300 transition-colors">Otros
+                            Actos</h3>
                     </div>
                     <div class="flex-grow">
                         <ul class="text-gray-300 space-y-2 text-sm">
@@ -599,7 +554,8 @@
                         </ul>
                     </div>
                     <div class="mt-4 pt-3 border-t border-gray-700">
-                        <button class="text-silver hover:text-blue-400 text-xs font-semibold transition-colors flex items-center mx-auto group-hover:underline">
+                        <button
+                            class="text-silver hover:text-blue-400 text-xs font-semibold transition-colors flex items-center mx-auto group-hover:underline">
                             Ver más detalles
                             <span class="ml-2 transform group-hover:translate-x-1 transition-transform">→</span>
                         </button>
@@ -609,27 +565,36 @@
 
             <!-- Llamada a la acción -->
             <div class="text-center mt-16">
-                <div class="relative bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 p-8 rounded-2xl border border-gold max-w-2xl mx-auto overflow-hidden">
+                <div
+                    class="relative bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 p-8 rounded-2xl border border-gold max-w-2xl mx-auto overflow-hidden">
                     <!-- Elementos decorativos animados de fondo -->
                     <div class="absolute inset-0 opacity-20">
                         <div class="absolute top-4 left-8 w-16 h-16 bg-gold rounded-full animate-pulse"></div>
-                        <div class="absolute bottom-6 right-12 w-12 h-12 bg-yellow-400 rounded-full animate-bounce"></div>
+                        <div class="absolute bottom-6 right-12 w-12 h-12 bg-yellow-400 rounded-full animate-bounce">
+                        </div>
                         <div class="absolute top-12 right-6 w-8 h-8 bg-orange-400 rounded-full animate-ping"></div>
                         <div class="absolute bottom-12 left-16 w-6 h-6 bg-amber-400 rounded-full animate-pulse"></div>
-                        
+
                         <!-- Formas geométricas -->
-                        <div class="absolute top-8 right-20 w-10 h-10 border-2 border-gold transform rotate-45 animate-spin"></div>
-                        <div class="absolute bottom-8 left-8 w-14 h-14 border-2 border-yellow-400 rounded-full animate-pulse"></div>
+                        <div
+                            class="absolute top-8 right-20 w-10 h-10 border-2 border-gold transform rotate-45 animate-spin">
+                        </div>
+                        <div
+                            class="absolute bottom-8 left-8 w-14 h-14 border-2 border-yellow-400 rounded-full animate-pulse">
+                        </div>
                     </div>
-                    
+
                     <!-- Gradiente adicional para profundidad -->
                     <div class="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-                    
+
                     <!-- Contenido principal -->
                     <div class="relative z-10">
-                        <h3 class="text-2xl font-bold text-gold mb-4 drop-shadow-lg">¿Necesitas asesoramiento personalizado?</h3>
-                        <p class="text-gray-200 mb-6 drop-shadow-md">Contáctanos para una consulta gratuita sobre tu caso específico</p>
-                        <button class="bg-gradient-to-r from-yellow-400 via-gold to-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:from-yellow-300 hover:via-yellow-400 hover:to-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-yellow-400/50 border-2 border-yellow-300">
+                        <h3 class="text-2xl font-bold text-gold mb-4 drop-shadow-lg">¿Necesitas asesoramiento
+                            personalizado?</h3>
+                        <p class="text-gray-200 mb-6 drop-shadow-md">Contáctanos para una consulta gratuita sobre tu
+                            caso específico</p>
+                        <button
+                            class="bg-gradient-to-r from-yellow-400 via-gold to-yellow-400 text-black px-8 py-3 rounded-lg font-semibold hover:from-yellow-300 hover:via-yellow-400 hover:to-yellow-300 transition-all duration-300 transform hover:scale-105 shadow-2xl hover:shadow-yellow-400/50 border-2 border-yellow-300">
                             Solicitar Consulta
                         </button>
                     </div>
@@ -646,13 +611,15 @@
             <div class="absolute bottom-20 right-10 w-24 h-24 border border-gold rounded-full"></div>
             <div class="absolute top-1/2 left-1/4 w-16 h-16 border border-gold transform rotate-45"></div>
         </div>
-        
+
         <div class="container mx-auto px-6 relative z-10">
             <!-- Título principal con animación -->
             <div class="text-center mb-16">
                 <h2 class="text-5xl md:text-6xl font-bold mb-6 text-gold relative">
                     Sobre Nosotros
-                    <div class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-gold to-transparent"></div>
+                    <div
+                        class="absolute -bottom-2 left-1/2 transform -translate-x-1/2 w-24 h-1 bg-gradient-to-r from-transparent via-gold to-transparent">
+                    </div>
                 </h2>
                 <p class="text-xl text-gray-400 max-w-2xl mx-auto">
                     Descubre la historia y valores que nos definen
@@ -663,37 +630,43 @@
             <div class="grid lg:grid-cols-2 gap-16 items-center mb-20">
                 <!-- Texto descriptivo -->
                 <div class="space-y-6">
-                    <div class="bg-gradient-to-r from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-gold transition-all duration-300 hover:shadow-2xl">
+                    <div
+                        class="bg-gradient-to-r from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-gold transition-all duration-300 hover:shadow-2xl">
                         <h3 class="text-2xl font-bold text-gold mb-4 flex items-center">
-                            <span class="w-8 h-8 bg-gold rounded-full flex items-center justify-center text-black text-sm font-bold mr-3">1</span>
+                            <span
+                                class="w-8 h-8 bg-gold rounded-full flex items-center justify-center text-black text-sm font-bold mr-3">1</span>
                             Nuestra Historia
                         </h3>
                         <p class="text-gray-300 leading-relaxed">
-                            La escribanía Manqueo Robledo se ha consolidado como una institución de confianza 
-                            en el ámbito notarial y jurídico, construyendo una reputación sólida a través de 
+                            La escribanía Manqueo Robledo se ha consolidado como una institución de confianza
+                            en el ámbito notarial y jurídico, construyendo una reputación sólida a través de
                             décadas de servicio excepcional.
                         </p>
                     </div>
-                    
-                    <div class="bg-gradient-to-r from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-gold transition-all duration-300 hover:shadow-2xl">
+
+                    <div
+                        class="bg-gradient-to-r from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-gold transition-all duration-300 hover:shadow-2xl">
                         <h3 class="text-2xl font-bold text-gold mb-4 flex items-center">
-                            <span class="w-8 h-8 bg-gold rounded-full flex items-center justify-center text-black text-sm font-bold mr-3">2</span>
+                            <span
+                                class="w-8 h-8 bg-gold rounded-full flex items-center justify-center text-black text-sm font-bold mr-3">2</span>
                             Nuestro Compromiso
                         </h3>
                         <p class="text-gray-300 leading-relaxed">
-                            Brindamos un servicio personalizado y de excelencia, respaldado por años de 
-                            experiencia y un profundo conocimiento del derecho, garantizando la máxima 
+                            Brindamos un servicio personalizado y de excelencia, respaldado por años de
+                            experiencia y un profundo conocimiento del derecho, garantizando la máxima
                             seguridad jurídica en cada gestión.
                         </p>
                     </div>
-                    
-                    <div class="bg-gradient-to-r from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-gold transition-all duration-300 hover:shadow-2xl">
+
+                    <div
+                        class="bg-gradient-to-r from-gray-900 to-gray-800 p-8 rounded-2xl border border-gray-700 hover:border-gold transition-all duration-300 hover:shadow-2xl">
                         <h3 class="text-2xl font-bold text-gold mb-4 flex items-center">
-                            <span class="w-8 h-8 bg-gold rounded-full flex items-center justify-center text-black text-sm font-bold mr-3">3</span>
+                            <span
+                                class="w-8 h-8 bg-gold rounded-full flex items-center justify-center text-black text-sm font-bold mr-3">3</span>
                             Nuestra Visión
                         </h3>
                         <p class="text-gray-300 leading-relaxed">
-                            Ser la escribanía de referencia, combinando tradición y modernidad para ofrecer 
+                            Ser la escribanía de referencia, combinando tradición y modernidad para ofrecer
                             soluciones jurídicas integrales que superen las expectativas de nuestros clientes.
                         </p>
                     </div>
@@ -703,79 +676,84 @@
                 <div class="flex justify-center lg:justify-end">
                     <div class="relative group">
                         <!-- Marco decorativo animado -->
-                        <div class="absolute -inset-6 bg-gradient-to-r from-gold via-yellow-500 to-gold rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 animate-pulse"></div>
-                        
+                        <div
+                            class="absolute -inset-6 bg-gradient-to-r from-gold via-yellow-500 to-gold rounded-2xl opacity-20 group-hover:opacity-30 transition-opacity duration-300 animate-pulse">
+                        </div>
+
                         <!-- Contenedor de imagen -->
-                        <div class="relative bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border-2 border-gold shadow-2xl">
+                        <div
+                            class="relative bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border-2 border-gold shadow-2xl">
                             <!-- SVG representativo de oficina legal moderna -->
                             <svg width="400" height="300" viewBox="0 0 400 300" class="mx-auto">
                                 <!-- Fondo de oficina -->
-                                <rect width="400" height="300" fill="#1a1a1a" rx="15"/>
-                                
+                                <rect width="400" height="300" fill="#1a1a1a" rx="15" />
+
                                 <!-- Escritorio -->
-                                <rect x="50" y="200" width="300" height="80" fill="#8B4513" rx="5"/>
-                                <rect x="50" y="190" width="300" height="10" fill="#A0522D" rx="5"/>
-                                
+                                <rect x="50" y="200" width="300" height="80" fill="#8B4513" rx="5" />
+                                <rect x="50" y="190" width="300" height="10" fill="#A0522D" rx="5" />
+
                                 <!-- Computadora -->
-                                <rect x="120" y="160" width="80" height="50" fill="#2C2C2C" rx="3"/>
-                                <rect x="125" y="165" width="70" height="35" fill="#FFD700" opacity="0.3" rx="2"/>
-                                <rect x="150" y="210" width="30" height="5" fill="#2C2C2C" rx="2"/>
-                                
+                                <rect x="120" y="160" width="80" height="50" fill="#2C2C2C" rx="3" />
+                                <rect x="125" y="165" width="70" height="35" fill="#FFD700" opacity="0.3" rx="2" />
+                                <rect x="150" y="210" width="30" height="5" fill="#2C2C2C" rx="2" />
+
                                 <!-- Libros legales -->
-                                <rect x="220" y="170" width="15" height="40" fill="#8B0000" rx="1"/>
-                                <rect x="240" y="175" width="15" height="35" fill="#006400" rx="1"/>
-                                <rect x="260" y="165" width="15" height="45" fill="#000080" rx="1"/>
-                                <rect x="280" y="180" width="15" height="30" fill="#8B4513" rx="1"/>
-                                
+                                <rect x="220" y="170" width="15" height="40" fill="#8B0000" rx="1" />
+                                <rect x="240" y="175" width="15" height="35" fill="#006400" rx="1" />
+                                <rect x="260" y="165" width="15" height="45" fill="#000080" rx="1" />
+                                <rect x="280" y="180" width="15" height="30" fill="#8B4513" rx="1" />
+
                                 <!-- Lámpara de escritorio -->
-                                <circle cx="320" cy="180" r="8" fill="#FFD700"/>
-                                <rect x="318" y="180" width="4" height="20" fill="#2C2C2C"/>
-                                <rect x="315" y="200" width="10" height="3" fill="#2C2C2C" rx="1"/>
-                                
+                                <circle cx="320" cy="180" r="8" fill="#FFD700" />
+                                <rect x="318" y="180" width="4" height="20" fill="#2C2C2C" />
+                                <rect x="315" y="200" width="10" height="3" fill="#2C2C2C" rx="1" />
+
                                 <!-- Documentos -->
-                                <rect x="80" y="175" width="25" height="35" fill="#FFFFFF" opacity="0.9" rx="2"/>
-                                <rect x="85" y="180" width="15" height="2" fill="#000000" opacity="0.3"/>
-                                <rect x="85" y="185" width="20" height="2" fill="#000000" opacity="0.3"/>
-                                <rect x="85" y="190" width="18" height="2" fill="#000000" opacity="0.3"/>
-                                
+                                <rect x="80" y="175" width="25" height="35" fill="#FFFFFF" opacity="0.9" rx="2" />
+                                <rect x="85" y="180" width="15" height="2" fill="#000000" opacity="0.3" />
+                                <rect x="85" y="185" width="20" height="2" fill="#000000" opacity="0.3" />
+                                <rect x="85" y="190" width="18" height="2" fill="#000000" opacity="0.3" />
+
                                 <!-- Estantería de fondo -->
-                                <rect x="20" y="50" width="360" height="120" fill="#654321" opacity="0.6" rx="5"/>
-                                <rect x="30" y="60" width="340" height="2" fill="#8B4513"/>
-                                <rect x="30" y="100" width="340" height="2" fill="#8B4513"/>
-                                <rect x="30" y="140" width="340" height="2" fill="#8B4513"/>
-                                
+                                <rect x="20" y="50" width="360" height="120" fill="#654321" opacity="0.6" rx="5" />
+                                <rect x="30" y="60" width="340" height="2" fill="#8B4513" />
+                                <rect x="30" y="100" width="340" height="2" fill="#8B4513" />
+                                <rect x="30" y="140" width="340" height="2" fill="#8B4513" />
+
                                 <!-- Libros en estantería -->
                                 <g opacity="0.8">
-                                    <rect x="40" y="65" width="8" height="30" fill="#8B0000"/>
-                                    <rect x="50" y="70" width="8" height="25" fill="#006400"/>
-                                    <rect x="60" y="65" width="8" height="30" fill="#000080"/>
-                                    <rect x="70" y="68" width="8" height="27" fill="#8B4513"/>
-                                    <rect x="80" y="65" width="8" height="30" fill="#FFD700"/>
+                                    <rect x="40" y="65" width="8" height="30" fill="#8B0000" />
+                                    <rect x="50" y="70" width="8" height="25" fill="#006400" />
+                                    <rect x="60" y="65" width="8" height="30" fill="#000080" />
+                                    <rect x="70" y="68" width="8" height="27" fill="#8B4513" />
+                                    <rect x="80" y="65" width="8" height="30" fill="#FFD700" />
                                 </g>
-                                
+
                                 <!-- Certificados en la pared -->
-                                <rect x="100" y="20" width="40" height="30" fill="#FFFFFF" opacity="0.9" rx="2"/>
-                                <rect x="160" y="25" width="40" height="30" fill="#FFFFFF" opacity="0.9" rx="2"/>
-                                <rect x="220" y="20" width="40" height="30" fill="#FFFFFF" opacity="0.9" rx="2"/>
-                                
+                                <rect x="100" y="20" width="40" height="30" fill="#FFFFFF" opacity="0.9" rx="2" />
+                                <rect x="160" y="25" width="40" height="30" fill="#FFFFFF" opacity="0.9" rx="2" />
+                                <rect x="220" y="20" width="40" height="30" fill="#FFFFFF" opacity="0.9" rx="2" />
+
                                 <!-- Sello notarial decorativo -->
-                                <circle cx="350" cy="40" r="20" fill="none" stroke="#FFD700" stroke-width="2"/>
-                                <text x="350" y="45" text-anchor="middle" fill="#FFD700" font-size="12" font-weight="bold">MR</text>
-                                
+                                <circle cx="350" cy="40" r="20" fill="none" stroke="#FFD700" stroke-width="2" />
+                                <text x="350" y="45" text-anchor="middle" fill="#FFD700" font-size="12"
+                                    font-weight="bold">MR</text>
+
                                 <!-- Iluminación ambiental -->
                                 <defs>
                                     <radialGradient id="ambientLight" cx="50%" cy="0%" r="50%">
-                                        <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.1"/>
-                                        <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0"/>
+                                        <stop offset="0%" style="stop-color:#FFD700;stop-opacity:0.1" />
+                                        <stop offset="100%" style="stop-color:#FFD700;stop-opacity:0" />
                                     </radialGradient>
                                 </defs>
-                                <rect width="400" height="150" fill="url(#ambientLight)"/>
+                                <rect width="400" height="150" fill="url(#ambientLight)" />
                             </svg>
-                            
+
                             <!-- Texto descriptivo de la imagen -->
                             <div class="mt-6 text-center">
                                 <h4 class="text-xl font-bold text-gold mb-2">Nuestra Oficina</h4>
-                                <p class="text-gray-400 text-sm">Ambiente profesional y acogedor donde brindamos nuestros servicios</p>
+                                <p class="text-gray-400 text-sm">Ambiente profesional y acogedor donde brindamos
+                                    nuestros servicios</p>
                             </div>
                         </div>
                     </div>
@@ -785,31 +763,40 @@
             <!-- Estadísticas mejoradas -->
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="text-center group">
-                    <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-gold transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl">
-                        <div class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
+                    <div
+                        class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-gold transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-pulse">
                             <span class="text-white text-3xl">📅</span>
                         </div>
-                        <div class="text-4xl font-bold text-gold mb-3 group-hover:text-yellow-400 transition-colors">20+</div>
+                        <div class="text-4xl font-bold text-gold mb-3 group-hover:text-yellow-400 transition-colors">20+
+                        </div>
                         <div class="text-gray-300 font-semibold text-lg">Años de Experiencia</div>
                         <div class="text-gray-500 text-sm mt-2">Trayectoria consolidada en el sector</div>
                     </div>
                 </div>
                 <div class="text-center group">
-                    <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-gold transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl">
-                        <div class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-bounce">
+                    <div
+                        class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-gold transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-bounce">
                             <span class="text-white text-3xl">👥</span>
                         </div>
-                        <div class="text-4xl font-bold text-gold mb-3 group-hover:text-yellow-400 transition-colors">1000+</div>
+                        <div class="text-4xl font-bold text-gold mb-3 group-hover:text-yellow-400 transition-colors">
+                            1000+</div>
                         <div class="text-gray-300 font-semibold text-lg">Clientes Satisfechos</div>
                         <div class="text-gray-500 text-sm mt-2">Confianza respaldada por resultados</div>
                     </div>
                 </div>
                 <div class="text-center group">
-                    <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-gold transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl">
-                        <div class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-spin">
+                    <div
+                        class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-xl border border-gray-700 hover:border-gold transition-all duration-300 hover:transform hover:scale-105 hover:shadow-2xl">
+                        <div
+                            class="w-20 h-20 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:animate-spin">
                             <span class="text-white text-3xl">🕒</span>
                         </div>
-                        <div class="text-4xl font-bold text-gold mb-3 group-hover:text-yellow-400 transition-colors">24/7</div>
+                        <div class="text-4xl font-bold text-gold mb-3 group-hover:text-yellow-400 transition-colors">
+                            24/7</div>
                         <div class="text-gray-300 font-semibold text-lg">Atención Disponible</div>
                         <div class="text-gray-500 text-sm mt-2">Consultas cuando las necesites</div>
                     </div>
@@ -826,52 +813,63 @@
                     <!-- Texto de presentación -->
                     <div>
                         <h2 class="text-4xl font-bold mb-8 text-gold">Nuestra Escribana</h2>
-                        <h3 class="text-2xl font-semibold mb-6 text-white">Dra. Manqueo Robledo</h3>
+                        <h3 class="text-2xl font-semibold mb-6 text-white">Dra. María Elena Manqueo Robledo</h3>
                         <p class="text-lg text-gray-300 mb-6 leading-relaxed">
-                            Con más de dos décadas de experiencia en el ejercicio notarial, la Dra. María Elena Manqueo Robledo 
-                            se ha destacado por su compromiso con la excelencia profesional y la atención personalizada a cada cliente.
+                            Con más de dos décadas de experiencia en el ejercicio notarial, la Dra. María Elena Manqueo
+                            Robledo
+                            se ha destacado por su compromiso con la excelencia profesional y la atención personalizada
+                            a cada cliente.
                         </p>
                         <p class="text-lg text-gray-300 mb-6 leading-relaxed">
-                            Graduada con honores de la Universidad Nacional, cuenta con especializaciones en Derecho Notarial, 
-                            Derecho Inmobiliario y Derecho de Familia. Su vasta experiencia abarca desde operaciones inmobiliarias 
+                            Graduada con honores de la Universidad Nacional, cuenta con especializaciones en Derecho
+                            Notarial,
+                            Derecho Inmobiliario y Derecho de Familia. Su vasta experiencia abarca desde operaciones
+                            inmobiliarias
                             complejas hasta la constitución de sociedades y planificación patrimonial.
                         </p>
 
                     </div>
-                    
+
                     <!-- Imagen de la escribana -->
                     <div class="flex justify-center">
                         <div class="relative">
                             <!-- Marco decorativo -->
-                            <div class="absolute -inset-4 bg-gradient-to-r from-gold via-yellow-500 to-gold rounded-lg opacity-20"></div>
-                            
+                            <div
+                                class="absolute -inset-4 bg-gradient-to-r from-gold via-yellow-500 to-gold rounded-lg opacity-20">
+                            </div>
+
                             <!-- Imagen placeholder con SVG profesional -->
                             <div class="relative bg-gray-800 rounded-lg p-8 border-2 border-gold">
                                 <svg width="300" height="400" viewBox="0 0 300 400" class="mx-auto">
                                     <!-- Fondo -->
-                                    <rect width="300" height="400" fill="#1a1a1a" rx="10"/>
-                                    
+                                    <rect width="300" height="400" fill="#1a1a1a" rx="10" />
+
                                     <!-- Silueta profesional -->
                                     <g transform="translate(150,120)">
                                         <!-- Cabeza -->
-                                        <circle cx="0" cy="0" r="45" fill="#FFD700" opacity="0.8"/>
-                                        
+                                        <circle cx="0" cy="0" r="45" fill="#FFD700" opacity="0.8" />
+
                                         <!-- Cuerpo/traje -->
-                                        <rect x="-50" y="30" width="100" height="120" fill="#FFD700" opacity="0.6" rx="5"/>
-                                        
+                                        <rect x="-50" y="30" width="100" height="120" fill="#FFD700" opacity="0.6"
+                                            rx="5" />
+
                                         <!-- Detalles del traje -->
-                                        <line x1="-30" y1="50" x2="30" y2="50" stroke="#FFA500" stroke-width="2"/>
-                                        <line x1="-20" y1="70" x2="20" y2="70" stroke="#FFA500" stroke-width="2"/>
-                                        
+                                        <line x1="-30" y1="50" x2="30" y2="50" stroke="#FFA500" stroke-width="2" />
+                                        <line x1="-20" y1="70" x2="20" y2="70" stroke="#FFA500" stroke-width="2" />
+
                                         <!-- Libros/documentos -->
-                                        <rect x="-60" y="160" width="25" height="35" fill="#FFD700" opacity="0.7" rx="2"/>
-                                        <rect x="-30" y="165" width="25" height="30" fill="#FFA500" opacity="0.7" rx="2"/>
-                                        <rect x="5" y="170" width="25" height="25" fill="#FFD700" opacity="0.7" rx="2"/>
+                                        <rect x="-60" y="160" width="25" height="35" fill="#FFD700" opacity="0.7"
+                                            rx="2" />
+                                        <rect x="-30" y="165" width="25" height="30" fill="#FFA500" opacity="0.7"
+                                            rx="2" />
+                                        <rect x="5" y="170" width="25" height="25" fill="#FFD700" opacity="0.7"
+                                            rx="2" />
                                     </g>
-                                    
+
                                     <!-- Texto decorativo -->
-                                    <text x="150" y="350" text-anchor="middle" fill="#FFD700" font-size="16" font-weight="bold">
-                                        Dra.  Manqueo Robledo
+                                    <text x="150" y="350" text-anchor="middle" fill="#FFD700" font-size="16"
+                                        font-weight="bold">
+                                        Dra. María Elena Manqueo Robledo
                                     </text>
                                     <text x="150" y="370" text-anchor="middle" fill="#FFA500" font-size="12">
                                         Escribana Pública
@@ -881,44 +879,52 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <!-- Credenciales y Logros - Sección Moderna -->
                 <div class="mt-16 max-w-5xl mx-auto">
                     <h3 class="text-3xl font-bold text-center mb-12 text-gold">Credenciales y Trayectoria</h3>
                     <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+                        <div
+                            class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
                             <div class="text-center">
-                                <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span class="text-white text-2xl">🎓</span>
                                 </div>
                                 <h4 class="text-lg font-semibold text-white mb-2">Formación Académica</h4>
                                 <p class="text-gray-400 text-sm">Escribana Pública - Universidad Nacional</p>
                             </div>
                         </div>
-                        
-                        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+
+                        <div
+                            class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
                             <div class="text-center">
-                                <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span class="text-white text-2xl">📜</span>
                                 </div>
                                 <h4 class="text-lg font-semibold text-white mb-2">Especializaciones</h4>
                                 <p class="text-gray-400 text-sm">Derecho Notarial e Inmobiliario</p>
                             </div>
                         </div>
-                        
-                        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+
+                        <div
+                            class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
                             <div class="text-center">
-                                <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span class="text-white text-2xl">⚖️</span>
                                 </div>
                                 <h4 class="text-lg font-semibold text-white mb-2">Membresías</h4>
                                 <p class="text-gray-400 text-sm">Miembro del Colegio de Escribanos</p>
                             </div>
                         </div>
-                        
-                        <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
+
+                        <div
+                            class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-xl hover:transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-2xl">
                             <div class="text-center">
-                                <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                     <span class="text-white text-2xl">🏆</span>
                                 </div>
                                 <h4 class="text-lg font-semibold text-white mb-2">Experiencia</h4>
@@ -935,11 +941,14 @@
     <section id="contacto" class="py-20 bg-black relative overflow-hidden">
         <!-- Elementos decorativos de fondo -->
         <div class="absolute inset-0 opacity-5">
-            <div class="absolute top-20 right-10 w-40 h-40 border-2 border-silver rounded-full metallic-border animate-pulse"></div>
-            <div class="absolute bottom-20 left-10 w-32 h-32 border-2 border-silver transform rotate-45 metallic-border animate-spin" style="animation-duration: 20s;"></div>
+            <div
+                class="absolute top-20 right-10 w-40 h-40 border-2 border-silver rounded-full metallic-border animate-pulse">
+            </div>
+            <div class="absolute bottom-20 left-10 w-32 h-32 border-2 border-silver transform rotate-45 metallic-border animate-spin"
+                style="animation-duration: 20s;"></div>
             <div class="absolute top-1/2 right-1/4 w-16 h-16 border border-silver rounded-full"></div>
         </div>
-        
+
         <div class="container mx-auto px-6 relative z-10">
             <!-- Título principal -->
             <div class="text-center mb-16">
@@ -956,15 +965,19 @@
             <div class="grid lg:grid-cols-2 gap-16 max-w-7xl mx-auto mb-20">
                 <!-- Información de contacto -->
                 <div class="space-y-8">
-                    <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-silver transition-all duration-300 hover:shadow-2xl">
+                    <div
+                        class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-silver transition-all duration-300 hover:shadow-2xl">
                         <h3 class="text-2xl font-bold mb-8 text-silver flex items-center">
-                            <span class="w-10 h-10 bg-silver rounded-full flex items-center justify-center text-black text-lg font-bold mr-4">📞</span>
+                            <span
+                                class="w-10 h-10 bg-silver rounded-full flex items-center justify-center text-black text-lg font-bold mr-4">📞</span>
                             Información de Contacto
                         </h3>
-                        
+
                         <div class="space-y-6">
-                            <div class="flex items-start group hover:transform hover:scale-105 transition-all duration-300">
-                                <div class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mr-4 group-hover:animate-pulse">
+                            <div
+                                class="flex items-start group hover:transform hover:scale-105 transition-all duration-300">
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mr-4 group-hover:animate-pulse">
                                     <span class="text-white text-lg">📍</span>
                                 </div>
                                 <div>
@@ -973,9 +986,11 @@
                                     <p class="text-gray-400 text-sm">Ciudad Autónoma de Buenos Aires</p>
                                 </div>
                             </div>
-                            
-                            <div class="flex items-start group hover:transform hover:scale-105 transition-all duration-300">
-                                <div class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 group-hover:animate-bounce">
+
+                            <div
+                                class="flex items-start group hover:transform hover:scale-105 transition-all duration-300">
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center mr-4 group-hover:animate-bounce">
                                     <span class="text-white text-lg">📞</span>
                                 </div>
                                 <div>
@@ -984,9 +999,11 @@
                                     <p class="text-gray-400 text-sm">WhatsApp disponible</p>
                                 </div>
                             </div>
-                            
-                            <div class="flex items-start group hover:transform hover:scale-105 transition-all duration-300">
-                                <div class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mr-4 group-hover:animate-pulse">
+
+                            <div
+                                class="flex items-start group hover:transform hover:scale-105 transition-all duration-300">
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-purple-500 to-purple-600 rounded-full flex items-center justify-center mr-4 group-hover:animate-pulse">
                                     <span class="text-white text-lg">✉️</span>
                                 </div>
                                 <div>
@@ -995,9 +1012,11 @@
                                     <p class="text-gray-400 text-sm">Respuesta en 24 horas</p>
                                 </div>
                             </div>
-                            
-                            <div class="flex items-start group hover:transform hover:scale-105 transition-all duration-300">
-                                <div class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mr-4 group-hover:animate-spin">
+
+                            <div
+                                class="flex items-start group hover:transform hover:scale-105 transition-all duration-300">
+                                <div
+                                    class="w-12 h-12 bg-gradient-to-br from-orange-500 to-orange-600 rounded-full flex items-center justify-center mr-4 group-hover:animate-spin">
                                     <span class="text-white text-lg">🕒</span>
                                 </div>
                                 <div>
@@ -1011,9 +1030,11 @@
                     </div>
 
                     <!-- Servicios de emergencia -->
-                    <div class="bg-gradient-to-br from-red-900 via-red-800 to-red-900 p-6 rounded-2xl border border-red-700 hover:border-red-500 transition-all duration-300">
+                    <div
+                        class="bg-gradient-to-br from-red-900 via-red-800 to-red-900 p-6 rounded-2xl border border-red-700 hover:border-red-500 transition-all duration-300">
                         <div class="flex items-center mb-4">
-                            <div class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center mr-3 animate-pulse">
+                            <div
+                                class="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center mr-3 animate-pulse">
                                 <span class="text-white text-lg">🚨</span>
                             </div>
                             <h4 class="text-white font-bold text-lg">Atención de Emergencia</h4>
@@ -1022,37 +1043,40 @@
                         <p class="text-red-200 font-semibold">+54 11 9876-5432</p>
                     </div>
                 </div>
-                
+
                 <!-- Formulario de contacto -->
-                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-silver transition-all duration-300 hover:shadow-2xl">
+                <div
+                    class="bg-gradient-to-br from-gray-800 to-gray-900 p-8 rounded-2xl border border-gray-700 hover:border-silver transition-all duration-300 hover:shadow-2xl">
                     <h3 class="text-2xl font-bold mb-8 text-silver flex items-center">
-                        <span class="w-10 h-10 bg-silver rounded-full flex items-center justify-center text-black text-lg font-bold mr-4">📝</span>
+                        <span
+                            class="w-10 h-10 bg-silver rounded-full flex items-center justify-center text-black text-lg font-bold mr-4">📝</span>
                         Envíanos tu Consulta
                     </h3>
-                    
+
                     <form class="space-y-6" id="contact-form">
                         <div class="grid md:grid-cols-2 gap-4">
                             <div>
                                 <label class="block text-gray-300 text-sm font-semibold mb-2">Nombre *</label>
-                                <input type="text" required placeholder="Tu nombre completo" 
-                                       class="w-full p-4 bg-black border border-gray-600 rounded-lg text-white focus:border-silver focus:outline-none focus:ring-2 focus:ring-silver/20 transition-all duration-300 hover:border-gray-500">
+                                <input type="text" required placeholder="Tu nombre completo"
+                                    class="w-full p-4 bg-black border border-gray-600 rounded-lg text-white focus:border-silver focus:outline-none focus:ring-2 focus:ring-silver/20 transition-all duration-300 hover:border-gray-500">
                             </div>
                             <div>
                                 <label class="block text-gray-300 text-sm font-semibold mb-2">Teléfono</label>
-                                <input type="tel" placeholder="Tu número de teléfono" 
-                                       class="w-full p-4 bg-black border border-gray-600 rounded-lg text-white focus:border-silver focus:outline-none focus:ring-2 focus:ring-silver/20 transition-all duration-300 hover:border-gray-500">
+                                <input type="tel" placeholder="Tu número de teléfono"
+                                    class="w-full p-4 bg-black border border-gray-600 rounded-lg text-white focus:border-silver focus:outline-none focus:ring-2 focus:ring-silver/20 transition-all duration-300 hover:border-gray-500">
                             </div>
                         </div>
-                        
+
                         <div>
                             <label class="block text-gray-300 text-sm font-semibold mb-2">Email *</label>
-                            <input type="email" required placeholder="tu@email.com" 
-                                   class="w-full p-4 bg-black border border-gray-600 rounded-lg text-white focus:border-silver focus:outline-none focus:ring-2 focus:ring-silver/20 transition-all duration-300 hover:border-gray-500">
+                            <input type="email" required placeholder="tu@email.com"
+                                class="w-full p-4 bg-black border border-gray-600 rounded-lg text-white focus:border-silver focus:outline-none focus:ring-2 focus:ring-silver/20 transition-all duration-300 hover:border-gray-500">
                         </div>
-                        
+
                         <div>
                             <label class="block text-gray-300 text-sm font-semibold mb-2">Tipo de Consulta</label>
-                            <select class="w-full p-4 bg-black border border-gray-600 rounded-lg text-white focus:border-silver focus:outline-none focus:ring-2 focus:ring-silver/20 transition-all duration-300 hover:border-gray-500">
+                            <select
+                                class="w-full p-4 bg-black border border-gray-600 rounded-lg text-white focus:border-silver focus:outline-none focus:ring-2 focus:ring-silver/20 transition-all duration-300 hover:border-gray-500">
                                 <option value="">Selecciona el tipo de consulta</option>
                                 <option value="certificaciones">Certificaciones y Legalizaciones</option>
                                 <option value="escrituras">Escrituras y Documentación</option>
@@ -1062,22 +1086,24 @@
                                 <option value="otros">Otros</option>
                             </select>
                         </div>
-                        
+
                         <div>
                             <label class="block text-gray-300 text-sm font-semibold mb-2">Mensaje *</label>
-                            <textarea required placeholder="Describe tu consulta o necesidad legal..." rows="5" 
-                                      class="w-full p-4 bg-black border border-gray-600 rounded-lg text-white focus:border-silver focus:outline-none focus:ring-2 focus:ring-silver/20 transition-all duration-300 hover:border-gray-500 resize-none"></textarea>
+                            <textarea required placeholder="Describe tu consulta o necesidad legal..." rows="5"
+                                class="w-full p-4 bg-black border border-gray-600 rounded-lg text-white focus:border-silver focus:outline-none focus:ring-2 focus:ring-silver/20 transition-all duration-300 hover:border-gray-500 resize-none"></textarea>
                         </div>
-                        
+
                         <div class="flex items-start">
                             <input type="checkbox" id="privacy" required class="mt-1 mr-3 accent-silver">
                             <label for="privacy" class="text-gray-400 text-sm">
-                                Acepto la <a href="#" class="text-silver hover:text-white underline">política de privacidad</a> 
+                                Acepto la <a href="#" class="text-silver hover:text-white underline">política de
+                                    privacidad</a>
                                 y autorizo el tratamiento de mis datos personales.
                             </label>
                         </div>
-                        
-                        <button type="submit" class="w-full bg-gradient-to-r from-silver via-gray-300 to-silver text-black py-4 rounded-lg font-semibold hover:from-gray-300 hover:via-silver hover:to-gray-300 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-silver/30 border border-gray-400">
+
+                        <button type="submit"
+                            class="w-full bg-gradient-to-r from-silver via-gray-300 to-silver text-black py-4 rounded-lg font-semibold hover:from-gray-300 hover:via-silver hover:to-gray-300 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-silver/30 border border-gray-400">
                             <span class="flex items-center justify-center">
                                 <span class="mr-2">📤</span>
                                 Enviar Consulta
@@ -1101,35 +1127,51 @@
                     <div class="flex items-center mb-6">
                         <svg width="40" height="40" viewBox="0 0 200 200" class="mr-3">
                             <!-- Escudo exterior -->
-                            <path d="M100 20 L160 60 L160 140 L100 180 L40 140 L40 60 Z" 
-                                  fill="none" stroke="#FFD700" stroke-width="3"/>
-                            
+                            <path d="M100 20 L160 60 L160 140 L100 180 L40 140 L40 60 Z" fill="none" stroke="#FFD700"
+                                stroke-width="3" />
+
                             <!-- Escudo interior -->
-                            <path d="M100 35 L145 65 L145 135 L100 165 L55 135 L55 65 Z" 
-                                  fill="#1a1a1a" stroke="#FFA500" stroke-width="2"/>
-                            
-                            <!-- Balanza de la justicia -->
+                            <path d="M100 35 L145 65 L145 135 L100 165 L55 135 L55 65 Z" fill="#1a1a1a" stroke="#FFA500"
+                                stroke-width="2" />
+
+                            <!-- Libro abierto -->
                             <g transform="translate(100,90)">
-                                <!-- Poste central -->
-                                <line x1="0" y1="-25" x2="0" y2="25" stroke="#FFD700" stroke-width="3"/>
-                                
-                                <!-- Barra horizontal -->
-                                <line x1="-30" y1="-15" x2="30" y2="-15" stroke="#FFD700" stroke-width="2"/>
-                                
-                                <!-- Platos izquierdo -->
-                                <circle cx="-25" cy="-10" r="8" fill="none" stroke="#FFD700" stroke-width="2"/>
-                                <line x1="-25" y1="-15" x2="-25" y2="-2" stroke="#FFD700" stroke-width="1"/>
-                                
-                                <!-- Platos derecho -->
-                                <circle cx="25" cy="-10" r="8" fill="none" stroke="#FFD700" stroke-width="2"/>
-                                <line x1="25" y1="-15" x2="25" y2="-2" stroke="#FFD700" stroke-width="1"/>
-                                
-                                <!-- Base -->
-                                <rect x="-15" y="20" width="30" height="8" fill="#FFD700"/>
+                                <!-- Páginas del libro -->
+                                <path
+                                    d="M-35,-20 Q-35,-30 -20,-25 L0,-22 L20,-25 Q35,-30 35,-20 L35,15 Q35,25 20,20 L0,17 L-20,20 Q-35,25 -35,15 Z"
+                                    fill="#FFD700" stroke="#FFA500" stroke-width="1" />
+
+                                <!-- Línea central del libro -->
+                                <line x1="0" y1="-22" x2="0" y2="17" stroke="#FFA500" stroke-width="1" />
+
+                                <!-- Líneas de texto en página izquierda -->
+                                <line x1="-25" y1="-15" x2="-8" y2="-15" stroke="#CC8800" stroke-width="0.5" />
+                                <line x1="-25" y1="-10" x2="-5" y2="-10" stroke="#CC8800" stroke-width="0.5" />
+                                <line x1="-25" y1="-5" x2="-10" y2="-5" stroke="#CC8800" stroke-width="0.5" />
+                                <line x1="-25" y1="0" x2="-8" y2="0" stroke="#CC8800" stroke-width="0.5" />
+
+                                <!-- Líneas de texto en página derecha -->
+                                <line x1="8" y1="-15" x2="25" y2="-15" stroke="#CC8800" stroke-width="0.5" />
+                                <line x1="5" y1="-10" x2="25" y2="-10" stroke="#CC8800" stroke-width="0.5" />
+                                <line x1="10" y1="-5" x2="25" y2="-5" stroke="#CC8800" stroke-width="0.5" />
+                                <line x1="8" y1="0" x2="25" y2="0" stroke="#CC8800" stroke-width="0.5" />
                             </g>
-                            
+
+                            <!-- Pluma escribiendo -->
+                            <g transform="translate(130,70) rotate(25)">
+                                <!-- Cuerpo de la pluma -->
+                                <rect x="0" y="0" width="3" height="25" fill="#FFD700" rx="1" />
+
+                                <!-- Punta de la pluma -->
+                                <polygon points="0,25 1.5,30 3,25" fill="#FFA500" />
+
+                                <!-- Detalle dorado en la pluma -->
+                                <rect x="0.5" y="5" width="2" height="3" fill="#FFFF00" />
+                            </g>
+
                             <!-- Iniciales -->
-                            <text x="100" y="140" text-anchor="middle" fill="#FFD700" font-size="24" font-weight="bold" font-family="serif">MR</text>
+                            <text x="100" y="155" text-anchor="middle" fill="#FFD700" font-size="20" font-weight="bold"
+                                font-family="serif">MR</text>
                         </svg>
                         <div>
                             <div class="text-gold text-xl font-bold">Manqueo Robledo</div>
@@ -1137,17 +1179,20 @@
                         </div>
                     </div>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        Más de 20 años brindando servicios notariales y asesoría jurídica con 
+                        Más de 20 años brindando servicios notariales y asesoría jurídica con
                         profesionalismo, confianza y excelencia en cada gestión.
                     </p>
                     <div class="flex space-x-4 pt-4">
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gold rounded-full flex items-center justify-center transition-all duration-300 hover:transform hover:scale-110">
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 hover:bg-gold rounded-full flex items-center justify-center transition-all duration-300 hover:transform hover:scale-110">
                             <span class="text-gold hover:text-black text-lg">📧</span>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gold rounded-full flex items-center justify-center transition-all duration-300 hover:transform hover:scale-110">
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 hover:bg-gold rounded-full flex items-center justify-center transition-all duration-300 hover:transform hover:scale-110">
                             <span class="text-gold hover:text-black text-lg">📞</span>
                         </a>
-                        <a href="#" class="w-10 h-10 bg-gray-800 hover:bg-gold rounded-full flex items-center justify-center transition-all duration-300 hover:transform hover:scale-110">
+                        <a href="#"
+                            class="w-10 h-10 bg-gray-800 hover:bg-gold rounded-full flex items-center justify-center transition-all duration-300 hover:transform hover:scale-110">
                             <span class="text-gold hover:text-black text-lg">📍</span>
                         </a>
                     </div>
@@ -1157,12 +1202,24 @@
                 <div>
                     <h3 class="text-gold font-bold text-lg mb-6">Servicios Principales</h3>
                     <ul class="space-y-3">
-                        <li><a href="#servicios" class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span class="mr-2">•</span>Certificaciones y Legalizaciones</a></li>
-                        <li><a href="#servicios" class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span class="mr-2">•</span>Escrituras de Compraventa</a></li>
-                        <li><a href="#servicios" class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span class="mr-2">•</span>Protección Patrimonial</a></li>
-                        <li><a href="#servicios" class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span class="mr-2">•</span>Poderes Notariales</a></li>
-                        <li><a href="#servicios" class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span class="mr-2">•</span>Constitución de Sociedades</a></li>
-                        <li><a href="#servicios" class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span class="mr-2">•</span>Trámites de Herencia</a></li>
+                        <li><a href="#servicios"
+                                class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span
+                                    class="mr-2">•</span>Certificaciones y Legalizaciones</a></li>
+                        <li><a href="#servicios"
+                                class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span
+                                    class="mr-2">•</span>Escrituras de Compraventa</a></li>
+                        <li><a href="#servicios"
+                                class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span
+                                    class="mr-2">•</span>Protección Patrimonial</a></li>
+                        <li><a href="#servicios"
+                                class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span
+                                    class="mr-2">•</span>Poderes Notariales</a></li>
+                        <li><a href="#servicios"
+                                class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span
+                                    class="mr-2">•</span>Constitución de Sociedades</a></li>
+                        <li><a href="#servicios"
+                                class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span
+                                    class="mr-2">•</span>Trámites de Herencia</a></li>
                     </ul>
                 </div>
 
@@ -1205,22 +1262,36 @@
                 <div>
                     <h3 class="text-gold font-bold text-lg mb-6">Enlaces Útiles</h3>
                     <ul class="space-y-3">
-                        <li><a href="#inicio" class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span class="mr-2">→</span>Inicio</a></li>
-                        <li><a href="#servicios" class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span class="mr-2">→</span>Nuestros Servicios</a></li>
-                        <li><a href="#nosotros" class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span class="mr-2">→</span>Sobre Nosotros</a></li>
-                        <li><a href="#contacto" class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span class="mr-2">→</span>Contacto</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span class="mr-2">→</span>Política de Privacidad</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span class="mr-2">→</span>Términos y Condiciones</a></li>
+                        <li><a href="#inicio"
+                                class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span
+                                    class="mr-2">→</span>Inicio</a></li>
+                        <li><a href="#servicios"
+                                class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span
+                                    class="mr-2">→</span>Nuestros Servicios</a></li>
+                        <li><a href="#nosotros"
+                                class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span
+                                    class="mr-2">→</span>Sobre Nosotros</a></li>
+                        <li><a href="#contacto"
+                                class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span
+                                    class="mr-2">→</span>Contacto</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span
+                                    class="mr-2">→</span>Política de Privacidad</a></li>
+                        <li><a href="#"
+                                class="text-gray-400 hover:text-gold transition-colors text-sm flex items-center"><span
+                                    class="mr-2">→</span>Términos y Condiciones</a></li>
                     </ul>
-                    
+
                     <!-- Certificaciones -->
                     <div class="mt-8">
                         <h4 class="text-gold font-semibold text-sm mb-4">Certificaciones</h4>
                         <div class="flex space-x-2">
-                            <div class="w-12 h-12 bg-gray-800 rounded border border-gold flex items-center justify-center">
+                            <div
+                                class="w-12 h-12 bg-gray-800 rounded border border-gold flex items-center justify-center">
                                 <span class="text-gold text-xs font-bold">CE</span>
                             </div>
-                            <div class="w-12 h-12 bg-gray-800 rounded border border-gold flex items-center justify-center">
+                            <div
+                                class="w-12 h-12 bg-gray-800 rounded border border-gold flex items-center justify-center">
                                 <span class="text-gold text-xs font-bold">UN</span>
                             </div>
                         </div>
@@ -1237,7 +1308,7 @@
                         <p class="text-gray-500 text-sm">© 2024 Manqueo Robledo. Todos los derechos reservados.</p>
                         <p class="text-gray-600 text-xs mt-1">Desarrollado con profesionalismo y dedicación</p>
                     </div>
-                    
+
                     <!-- Enlaces legales -->
                     <div class="flex space-x-6 text-xs">
                         <a href="#" class="text-gray-500 hover:text-gold transition-colors">Aviso Legal</a>
@@ -1245,7 +1316,7 @@
                         <a href="#" class="text-gray-500 hover:text-gold transition-colors">Protección de Datos</a>
                     </div>
                 </div>
-                
+
                 <!-- Mensaje adicional -->
                 <div class="text-center mt-6 pt-6 border-t border-gray-900">
                     <p class="text-gray-600 text-xs italic">
@@ -1258,16 +1329,16 @@
 
     <script>
         // Animación de entrada de la página
-        window.addEventListener('load', function() {
+        window.addEventListener('load', function () {
             const loadingScreen = document.getElementById('loading-screen');
             const heroContent = document.getElementById('hero-content');
-            
+
             // Después de 2 segundos, ocultar pantalla de carga y mostrar contenido
             setTimeout(() => {
                 // Fade out de la pantalla de carga
                 loadingScreen.style.transition = 'opacity 0.8s ease-out';
                 loadingScreen.style.opacity = '0';
-                
+
                 // Después del fade out, remover completamente y mostrar hero
                 setTimeout(() => {
                     loadingScreen.style.display = 'none';
@@ -1285,7 +1356,7 @@
                     // Calcular la altura del header fijo
                     const headerHeight = document.querySelector('header').offsetHeight;
                     const targetPosition = target.offsetTop - headerHeight - 20; // 20px de margen adicional
-                    
+
                     window.scrollTo({
                         top: targetPosition,
                         behavior: 'smooth'
@@ -1295,18 +1366,18 @@
         });
 
         // Manejo del formulario de contacto
-        document.querySelector('#contact-form').addEventListener('submit', function(e) {
+        document.querySelector('#contact-form').addEventListener('submit', function (e) {
             e.preventDefault();
-            
+
             // Mostrar mensaje de confirmación más elegante
             const button = this.querySelector('button[type="submit"]');
             const originalText = button.innerHTML;
-            
+
             // Cambiar el botón temporalmente
             button.innerHTML = '<span class="flex items-center justify-center"><span class="mr-2">✅</span>Enviado</span>';
             button.disabled = true;
             button.classList.add('opacity-75');
-            
+
             // Simular envío y resetear después de 2 segundos
             setTimeout(() => {
                 alert('¡Gracias por tu consulta! Nos pondremos en contacto contigo a la brevedad.');
@@ -1319,5 +1390,7 @@
 
 
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98a1b6921018b4e3',t:'MTc1OTcxNzU3OC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'98a920ff40c8ae47',t:'MTc1OTc5NTMzOC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
 </html>
